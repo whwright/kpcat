@@ -3,7 +3,7 @@ from setuptools import setup
 
 requirements = [
     'click==7.0',
-    'construct>=2.9.45',
+    'construct==2.9.45',
     'pykeepass'
 ]
 
