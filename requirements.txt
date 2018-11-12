@@ -1,0 +1,2 @@
+click==7.0
+git+https://github.com/whwright/pykeepass.git@115-fix-tz-comparison
