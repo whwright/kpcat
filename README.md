@@ -1,7 +1,9 @@
 kpcat
 =====
 
-cat a keepass file - with style
+cat a keepass file
+
+The goal of this project is to read a keepass file on the command line, enabling usge with other unix tools.
 
 This is still in development. The goal of the project is to be able to read a keepass file from the command line,
 and use other unix tools to parse some information out of the file.
