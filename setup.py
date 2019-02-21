@@ -7,10 +7,6 @@ requirements = [
     'pykeepass'
 ]
 
-dependency_links = [
-    'git+ssh://git@github.com/whwright/pykeepass.git@115-fix-tz-comparison#egg=pykeepass'
-]
-
 setup(
     name='kpcat',
     version='0.1.0',
@@ -20,7 +16,6 @@ setup(
     author_email='mail@harrisonwright.me',
     py_modules=['kpcat'],
     install_requires=requirements,
-    dependency_links=dependency_links,
     entry_points='''
         [console_scripts]
         kpcat=kpcat:main
