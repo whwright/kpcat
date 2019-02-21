@@ -9,6 +9,7 @@ from pykeepass import PyKeePass, pykeepass
 JSON_OUTPUT_FORMAT = 'json'
 TEXT_OUTPUT_FORMAT = 'text'
 OUTPUT_FORMATS = [JSON_OUTPUT_FORMAT, TEXT_OUTPUT_FORMAT]
+DEFAULT_OUTPUT_FORMAT = TEXT_OUTPUT_FORMAT
 
 
 @click.command('kpcat')
@@ -21,11 +22,11 @@ OUTPUT_FORMATS = [JSON_OUTPUT_FORMAT, TEXT_OUTPUT_FORMAT]
               help='Key file for keepass file.')
 @click.option('--show-passwords', is_flag=True, help='Option to show passwords in output; passwords are '
                                                      'redacted by default.')
-@click.option('--output-format', type=click.Choice(OUTPUT_FORMATS), default=TEXT_OUTPUT_FORMAT,
-              help='Format type for output.')
+@click.option('--output-format', type=click.Choice(OUTPUT_FORMATS), default=DEFAULT_OUTPUT_FORMAT,
+              help='Format type for output. Default: {}'.format(DEFAULT_OUTPUT_FORMAT))
 def main(keepass_file, password, keyfile, show_passwords, output_format):
     """
-    cat a keepass file - with style
+    cat a keepass file
     """
     try:
         kp = PyKeePass(keepass_file, password=password, keyfile=keyfile)
