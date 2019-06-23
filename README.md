@@ -8,7 +8,7 @@ The goal of this project is to read a keepass file on the command line, enabling
 
 #### Basic usage
 ```
-$ python setup.py develop
+$ pip install kpcat
 $ ↪ kpcat --help
 Usage: kpcat [OPTIONS] KEEPASS_FILE
 
