@@ -1,11 +1,10 @@
 from setuptools import setup
 
 
-requirements = [
-    'click==7.0',
-    'construct==2.9.45',
-    'pykeepass'
-]
+requirements = []
+with open('requirements.txt', 'r') as f:
+    requirements = f.readlines()
+
 
 setup(
     name='kpcat',
