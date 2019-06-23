@@ -12,7 +12,7 @@ with open('requirements.txt', 'r') as f:
 
 setup(
     name='kpcat',
-    version='0.1.0',
+    version='0.1.1',
     description='cat a keepass file',
     long_description=README,
     long_description_content_type='text/markdown',
